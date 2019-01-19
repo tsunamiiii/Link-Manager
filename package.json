@@ -2,9 +2,9 @@
   "name": "stupid",
   "version": "1.0.0",
   "description": "A Discord bot",
-  "main": "pbot.js",
+  "main": "LM.js",
   "scripts": {
-    "start": "node pbot.js"
+    "start": "node LM.js"
   },
   "repository": {
     "type": "git",
