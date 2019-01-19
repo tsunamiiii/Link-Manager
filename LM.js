@@ -19,7 +19,7 @@ message.reply("<#536097338628767754>");
 }
 if(msg === pfix + "role") {
 if(message.channel.id !== "536089768573009920") return;
-if(!args.split(4)) return message.channel.send("Please provide a role.");
+if(!args.slice(4)) return message.channel.send("Please provide a role.");
 if(args.join(" ").includes("100")) {
 bot.channels.get("536224842882482215").send(new Discord.RichEmbed()
 .setTitle("Role Request")
