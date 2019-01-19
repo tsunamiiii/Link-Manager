@@ -11,7 +11,7 @@ if(message.content.toLowerCase().includes("https://youtu")) {
 message.delete();
 message.reply("<#536097338628767754>");
 } 
-if(message.content.toLowerCase().includes("https://www.youtu") {
+if(message.content.toLowerCase().includes("https://www.youtu")) {
 message.delete();
 message.reply("<#536097338628767754>");
 } 
