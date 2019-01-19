@@ -1,1 +1,1 @@
-worker: node pbot.js
+worker: node LM.js
