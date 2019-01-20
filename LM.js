@@ -16,8 +16,7 @@ if(message.channel.id == '536097338628767754') return;
 if(message.channel.id == '536112056957403136') return;
 message.delete();
 message.reply("<#536097338628767754>");
-}
-if(msg === pfix + "role") {
+}else if(msg.startsWith(pfix + "role")) {
 if(message.channel.id !== "536089768573009920") return;
 try{
 if(args.join(" ").includes("100")) {
