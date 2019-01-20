@@ -9,6 +9,7 @@ bot.user.setActivity(`you | yt;role`, {type: "LISTENING"});
 });
 
 bot.on("message", message => {
+if(message.author.bot) return;
 let args = message.content.slice(pfix.length).trim().split(' ');
 let msg = message.content.toLowerCase();
 if(msg.includes("youtu")) {
