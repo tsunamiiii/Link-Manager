@@ -4,8 +4,8 @@ const pfix = "yt;";
 
 bot.on("ready", () => {
 console.log('Im managing again!');
-bot.channels.get('536088775600898048').send('Link Manager v1.3 Operational');
-bot.user.setActivity(`you | yt;role`, {type: "LISTENING"});
+bot.channels.get('536088775600898048').send('Link Manager v1.3.1 Operational');
+bot.user.setActivity(`you | yt;help`, {type: "LISTENING"});
 });
 
 bot.on('message', message => {
