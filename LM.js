@@ -12,7 +12,6 @@ bot.on('message', async message => {
 let msg = message.content.toUpperCase();
 let args = message.content.slice(pfix.length).trim().split(' ');
 let cmd = args.shift().toLowerCase();
-if (!msg.startsWith(pfix)) return;
 if(message.author.bot) return;
 if(msg.includes('.youtu')) {
    if(message.channel.id == '536097338628767754') return;
@@ -22,6 +21,7 @@ if(msg.includes('.youtu')) {
    });
 }
 try{
+if(!msg.startsWith(pfix)) return;
 let commandFile = require(`./commands/${cmd}.js`);
 commandFile.run(bot, message, args);
 } catch(e) {
