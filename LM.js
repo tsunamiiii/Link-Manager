@@ -14,7 +14,7 @@ let args = message.content.slice(pfix.length).trim().split(' ');
 let cmd = args.shift().toLowerCase();
 if (!msg.startsWith(pfix)) return;
 if(message.author.bot) return;
-if(msg.includes('.youtu') {
+if(msg.includes('.youtu')) {
    if(message.channel.id == '536097338628767754') return;
    message.delete();
    message.reply('<#536097338628767754>').then(msg => {
