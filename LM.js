@@ -4,11 +4,11 @@ const pfix = "YT;";
 
 bot.on("ready", () => {
 console.log('Im managing again!');
-bot.channels.get('536088775600898048').send('Link Manager v1.3.1 Operational');
+bot.channels.get('543102959148466176').send('Link Manager v1.3.1 Operational');
 bot.user.setActivity(`you | yt;help`, {type: "LISTENING"});
 });
 
-bot.on('message', async message => {
+bot.on('message', zasync message => {
 let msg = message.content.toUpperCase();
 let args = message.content.slice(pfix.length).trim().split(' ');
 let cmd = args.shift().toLowerCase();
