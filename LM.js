@@ -8,7 +8,7 @@ bot.channels.get('543102959148466176').send('Link Manager v1.3.1 Operational');
 bot.user.setActivity(`you | yt;help`, {type: "LISTENING"});
 });
 
-bot.on('message', zasync message => {
+bot.on('message', async message => {
 let msg = message.content.toUpperCase();
 let args = message.content.slice(pfix.length).trim().split(' ');
 let cmd = args.shift().toLowerCase();
